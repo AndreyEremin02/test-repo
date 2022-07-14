@@ -12,7 +12,7 @@ on:
 jobs:
   Deploy-front:
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.deploy_or_undo == 'Deploy front' }}
+    if: ${{ github.event.inputs.deploy-front-or-back == 'Deploy front' }}
     steps:
       - name: Branch checkout
         uses: actions/checkout@v3
